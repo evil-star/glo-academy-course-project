@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Выборы</title>
+	<link rel="stylesheet" href="css/style.css?v=6">
+</head>
+<body>
+	<!-- Main Page -->
+	<div class="main">
+		<div class="main-cards">
+			<div class="main-cards-item main-cards-item-active">
+				<div class="candidate-block">
+					<div class="photo photo-1"></div>
+					<div class="result">
+						<div class="result-count">35%</div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-1"></div>
+						</div>
+					</div>
+				</div>
+				<div class="name">Иванов
+				Виктор Иванович</div>
+				<div class="age">38 лет</div>
+				Пол:
+				<div class="sex">Мужской</div>
+				Полит. взгляды:
+				<div class="views">Левые</div>
+				Биография
+				<div class="bio">13 декабря 2016 года объявил, что намерен баллотироваться на президентских выборах 2018 года, опубликовал основные положения своей предвыборной программы и начал собирать сторонников</div>
+			</div>
+			<div class="main-cards-item ">
+				<div class="candidate-block">
+					<div class="photo photo-2"></div>
+					<div class="result">
+						<div class="result-count">65%</div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-2"></div>
+						</div>
+					</div>
+				</div>
+				<div class="name">петрова
+				ирина сергеевна</div>
+				<div class="age">45 лет</div>
+				Пол:
+				<div class="sex">Женский</div>
+				Полит. взгляды:
+				<div class="views">Либеральные</div>
+				Биография
+				<div class="bio">Ко всем прочим заслугам можно отнести ее активную гражданскую позицию. Еще в конце 2011-го, после выборов в Государственную думу, вошла в десятку самых влиятельных российских женщин, рейтинг которой был составлен радиостанцией «Эхо Москвы»..</div>
+			</div>
+		</div>
+		<div class="main-buttons">
+			<div id="reset" class="btn">сбросить результаты</div>
+			<div id="voting" class="btn">провести честное
+			голосование</div>
+			<div id="crime" class="btn">вмешаться в выборы</div>
+		</div>
+	</div>
+
+	<!-- Popup -->
+	<div class="overlay">
+	 		<div class="popup">
+				<div class="popup-title">не доволен прошедшими выборами?</div>
+				<div class="popup-subtitle">создай своего кандидата</div>
+				<button id="popup-btn" class="popup-btn">создать</button>
+	 		</div>
+	</div>
+
+	<!-- Customization -->
+	<div class="custom">
+		<div class="custom-info">
+			<label for="name">Фамилия Имя Отчество</label>
+			<input type="text" id="name">
+			<label for="age">Возраст, лет</label>
+			<input type="text" id="age">
+			<div class="radio">
+				<input value="Мужской" id="male" checked name="sex" type="radio">
+				<label for="sex">Мужчина</label>
+				<input value="Женский" id="female" name="sex" type="radio">
+				<label for="sex">Женщина</label>
+			</div>
+			<select id="select">
+				<option value="Либеральные">Либеральные</option>
+				<option value="Левые">Левые</option>
+				<option value="Правые">Правые</option>
+			</select>	
+			<label for="bio">Биография</label>
+			<textarea name="bio" id="bio" cols="40" rows="8"></textarea>
+		</div>
+
+		<div class="custom-char">
+			<div class="person construct">
+				<div id="person-skin" class="person-skin"></div>
+				<div id="person-clothes" class="person-clothes"></div>
+				<div id="person-hair" class="person-hair"></div>
+				<div class="person-shoes"></div>
+			</div>
+			<div id="ready" class="btn">готово</div>
+		</div>
+
+		<div class="custom-style">
+			<div class="style-text">
+				Выберите цвет кожи
+			</div>
+			<div class="skin">
+				<div class="prev">
+					<i class="flaticon-left-arrow"></i>
+				</div>
+					<div class="skin-color skin-color-1"></div>
+					<div class="skin-color skin-color-2"></div>
+					<div class="skin-color skin-color-3"></div>
+				<div class="next">
+					<i class="flaticon-right-arrow"></i>
+				</div>
+			</div>
+			<div class="style-text">
+				Выберите прическу
+			</div>
+			<div class="hair">
+				<div class="prev">
+					<i class="flaticon-left-arrow"></i>
+				</div>
+					<div class="hair-style hair-style-1"></div>
+					<div class="hair-style hair-style-2"></div>
+					<div class="hair-style hair-style-3"></div>
+					<div class="hair-style hair-style-4"></div>
+					<div class="hair-style hair-style-5"></div>
+					<div class="hair-style hair-style-6"></div>
+				<div class="next">
+					<i class="flaticon-right-arrow"></i>
+				</div>
+			</div>
+			<div class="style-text">
+				Выберите одежду
+			</div>
+			<div class="clothes">
+				<div class="prev">
+					<i class="flaticon-left-arrow"></i>
+				</div>
+					<div class="clothes-style clothes-style-1"></div>
+					<div class="clothes-style clothes-style-2"></div>
+					<div class="clothes-style clothes-style-3"></div>
+					<div class="clothes-style clothes-style-4"></div>
+					<div class="clothes-style clothes-style-5"></div>
+					<div class="clothes-style clothes-style-6"></div>
+				<div class="next">
+					<i class="flaticon-right-arrow"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="js/main.js?v=5"></script>
+</body>
+</html>
